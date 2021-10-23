@@ -2,11 +2,66 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Форма</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <h1>Анкета відвідувача ресторану</h1>
+    <form  action="">
+       <fieldset>
+          <legend>Контактна інформація</legend>
+          <p>
+            <label for="name">Ім'я</label>
+            <input type="text" id="name">
+          </p>
+         <p>
+            <label for="number">Телефон</label>
+            <input type="text" id="number">
+         </p>
+         <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
+         </p>
+       </fieldset>
+      <fieldset>
+         <legend>Персональна інформація</legend>
+         <p>
+            <label for="age">Вік</label>
+            <input type="number" min="1" max="100" step="1" id="age">
+         </p>
+         <p>
+            <label for="kitchen">Улюблена кухня</label>
+            
+            <select> 
+               <option value="t1">Українська</option> 
+               <option value="t1">Китайська</option>
+               <option value="t1">Японська</option>
+               <option value="t1">Мексиканська</option>
+               <option value="t1">Італійська</option>            
+            </select> 
+         </p>
+         <p>
+            <label for="er">Які страви ви хотіли б бачити в меню</label> 
+            <textarea name="text" id="er" cols="20" rows="1"></textarea>        
+         </p>         
+      </fieldset>
+      <fieldset>
+         <legend>Оцінка нашого закладу</legend>
+         <p>
+            <label for="zak">Чому ви вибрали наш заклад</label>
+            <br>
+            <input type="radio" id="zak"> Недалеко від дому/роботи
+            <input type="radio" id="zak"> Побачив рекламу
+            <input type="radio" id="zak"> Порадили
+            <input type="radio" id="zak"> Оптимальне відношення ціни/якості
+            <br>
+            <label for="zak1">Чи порадите ви наш ресторан?</label>
+            <br>
+            <input type="radio" id="zak1"> Так
+            <input type="radio" id="zak1"> Ні
+         </p>
+      </fieldset>
+
+       <p><input type="submit" value="Відправити"></p>
+    </form>
   </body>
 </html>
